@@ -1,0 +1,174 @@
+*,
+::before,
+::after{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-size:20px;
+  font-family:'Libre Franklin',sans-serif;
+  text-align: center;
+}
+
+#piclogo{
+  margin:30px 0px 30px 0px;
+}
+
+#text{
+  font-weight:400;
+  color:hsl(0, 0%, 59%);
+}
+
+#text span{
+  font-weight:600;
+  padding-left:5px;
+  color:hsl(209, 33%, 12%);
+}
+
+#alttext{
+  margin-top:10px;
+  color:hsl(209, 33%, 12%);
+}
+
+.input-field{
+  position:relative;
+  display:flex;
+  flex-flow:row wrap;
+  margin-top:20px;
+  justify-content: center;
+}
+
+.input-field #email-input{
+  width:300px;
+  height:40px;
+  padding-left:20px;
+  outline:0;
+  border-radius:20px;
+  font-family:'Libre Franklin',sans-serif;
+  border:1px solid hsl(0, 0%, 59%);
+}
+
+.input-field #notify-button{
+  width:150px;
+  height:40px;
+  margin-left:10px;
+  box-shadow:0px 10px 6px -6px hsl(223, 100%, 88%);
+  border-radius:20px; 
+  background:hsl(223, 87%, 63%);
+  color:#FFFFFF;
+  font-weight:500;
+  border:none;
+  outline:0;
+  transition:all 350ms;
+  cursor:pointer;
+}
+
+.input-field #notify-buttom:hover{
+  box-shadow:0px 20px 6px -6px hsl(223, 100%, 88%);
+}
+
+.dashboard-image{
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-content: center;
+  overflow:hidden;
+}
+
+.dashboard-image #dashboard-img{
+  width:500px;
+  height:400px;
+  margin-top:80px;
+}
+
+
+.social{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  list-style:none;
+  margin-top:60px;
+}
+
+.social li{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  border:1px solid hsl(223, 100%, 88%);
+  line-height:30px;
+  margin-right:15px;
+  color:hsl(223, 87%, 63%);
+  transition:all 300ms;
+}
+
+.social li:hover{
+  color:hsl(223,100%,88%);
+  background:hsl(223,87%,63%);
+}
+
+#copy{
+  font-size:10px;
+  margin-left:-10px;
+  margin:10px 0px 20px 0px;
+  color:hsl(0, 0%, 59%);
+}
+
+#errortext {
+  color: hsl(354, 100%, 66%);
+  font-size: 12px;
+  position:absolute;
+  top:50px;
+  left:85px;
+  display:none;
+}
+
+
+@media only screen and (max-width:375px){
+  #text{
+    font-size:18px;
+    padding-bottom:10px;
+  }
+  #alttext{
+    font-size:14px;
+  }
+  
+  .input-field #email-input{
+    width:300px;
+  }
+  
+  .input-field #notify-button{
+    width:320px;
+    margin-top:10px;
+    margin-left:0px;
+  }
+  
+  .dashboard-image #dashboard-img{
+    width:350px;
+    height:250px;
+    margin-top:40px;
+  }
+  
+  
+  #copy{
+    font-size:14px;
+  }
+
+#errortext{
+  position:relative;
+  top:10px;
+  bottom:10px;
+  left:0px;
+  color:hsl(354, 100%, 66%);
+  font-size:12px;
+  margin-bottom:20px;
+  display:none;
+}
+}
+
+
+
+
+
+
+
